@@ -52,3 +52,20 @@ Hugging Face Spaces is a great alternative because it has **no strict 10s timeou
    - Use the provided `Dockerfile` in the root of the project.
    - The app will automatically build and run on port 3000.
 7. Your app will be live at `https://huggingface.co/spaces/YOUR_USERNAME/YOUR_SPACE_NAME`.
+
+## 6. Automating Sync from GitHub to Hugging Face
+To automatically deploy to Hugging Face whenever you push to GitHub:
+
+1. **Get a Hugging Face Token**:
+   - Go to [Hugging Face Settings > Access Tokens](https://huggingface.co/settings/tokens).
+   - Create a new token with **Write** role.
+2. **Add Secret to GitHub**:
+   - Go to your GitHub repository **Settings > Secrets and variables > Actions**.
+   - Click **New repository secret**.
+   - Name: `HF_TOKEN`
+   - Value: Paste your Hugging Face Write token.
+3. **Verify Space Name**:
+   - Ensure the name in `.github/workflows/hf_sync.yml` matches your Hugging Face Space URL.
+4. **Push to GitHub**:
+   - Once you push your changes, the GitHub Action will automatically sync the code to Hugging Face.
+
