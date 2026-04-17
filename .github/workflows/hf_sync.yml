@@ -17,5 +17,5 @@ jobs:
         env:
           HF_TOKEN: ${{ secrets.HF_TOKEN }}
         run: |
-          # Replace Sharon-codes/Cranium_mindMap with your actual Hugging Face username/space
-          git push -f https://Sharon-codes:$HF_TOKEN@huggingface.co/spaces/Sharon-codes/Cranium_mindMap main
+          # Syncing to SharonMelhi/Cranium
+          git push -f https://SharonMelhi:$HF_TOKEN@huggingface.co/spaces/SharonMelhi/Cranium main

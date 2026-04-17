@@ -15,6 +15,7 @@ export async function POST(request: Request) {
     if (!user) {
       return NextResponse.json({ error: "Unauthorized." }, { status: 401 });
     }
+
     await ensureUserProfile({ id: user.id, email: user.email });
     const formData = await request.formData();
     const file = formData.get("file");
