@@ -1,3 +1,12 @@
+---
+title: Cranium
+emoji: 🧠
+colorFrom: indigo
+colorTo: blue
+sdk: docker
+pinned: false
+---
+
 # Cranium
 
 Cranium is a production-ready Next.js + Supabase application that turns uploaded documents into AI-generated mind maps, then layers on summaries, explanations, flashcards, MCQs, and subjective evaluation.
