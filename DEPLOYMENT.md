@@ -50,7 +50,7 @@ Hugging Face Spaces is a great alternative because it has **no strict 10s timeou
 5. Add all your environment variables (the same ones used in Step 2) as **Secrets**.
 6. Upload your code to the Space repo (or sync it from GitHub).
    - Use the provided `Dockerfile` in the root of the project.
-   - The app will automatically build and run on port 3000.
+   - The app will automatically build and run on port 7860.
 7. Your app will be live at `https://huggingface.co/spaces/YOUR_USERNAME/YOUR_SPACE_NAME`.
 
 ## 6. Automating Sync from GitHub to Hugging Face
